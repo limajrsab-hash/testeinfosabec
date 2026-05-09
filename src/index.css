@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Infosab OS Design System
+   Cores em HSL. Primária #4231A4, acento #7C3AED, fundo #F8F7FF
+*/
+
+@layer base {
+  :root {
+    --background: 250 67% 98%;
+    --foreground: 248 40% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 248 40% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 248 40% 12%;
+
+    --primary: 250 53% 42%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 258 90% 66%;
+
+    --secondary: 250 40% 96%;
+    --secondary-foreground: 250 53% 42%;
+
+    --muted: 250 30% 95%;
+    --muted-foreground: 248 15% 45%;
+
+    --accent: 258 90% 66%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 70% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 40 90% 50%;
+    --warning-foreground: 248 40% 12%;
+
+    --info: 210 90% 55%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 250 30% 90%;
+    --input: 250 30% 90%;
+    --ring: 250 53% 42%;
+
+    --radius: 0.625rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(250 53% 42%), hsl(258 90% 66%));
+    --shadow-card: 0 1px 3px 0 hsl(250 50% 20% / 0.04), 0 1px 2px -1px hsl(250 50% 20% / 0.04);
+    --shadow-elevated: 0 10px 30px -10px hsl(250 53% 42% / 0.15);
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 248 40% 20%;
+    --sidebar-primary: 250 53% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 250 40% 96%;
+    --sidebar-accent-foreground: 250 53% 42%;
+    --sidebar-border: 250 30% 92%;
+    --sidebar-ring: 250 53% 42%;
+  }
+
+  .dark {
+    --background: 248 30% 8%;
+    --foreground: 250 30% 95%;
+    --card: 248 30% 11%;
+    --card-foreground: 250 30% 95%;
+    --popover: 248 30% 11%;
+    --popover-foreground: 250 30% 95%;
+    --primary: 258 90% 66%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 248 25% 18%;
+    --secondary-foreground: 250 30% 95%;
+    --muted: 248 25% 16%;
+    --muted-foreground: 250 15% 65%;
+    --accent: 258 90% 66%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 248 25% 20%;
+    --input: 248 25% 20%;
+    --ring: 258 90% 66%;
+    --sidebar-background: 248 30% 10%;
+    --sidebar-foreground: 250 30% 90%;
+    --sidebar-primary: 258 90% 66%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 248 25% 16%;
+    --sidebar-accent-foreground: 250 30% 95%;
+    --sidebar-border: 248 25% 18%;
+    --sidebar-ring: 258 90% 66%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html, body, #root {
+    @apply h-full;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+}

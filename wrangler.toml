@@ -1,0 +1,7 @@
+name = "infosab-os"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "dist"
+
+[vars]
+VITE_SUPABASE_URL = "https://xbwgvhvkdoiiptrakyyi.supabase.co"
+VITE_SUPABASE_PUBLISHABLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhid2d2aHZrZG9paXB0cmFreXlpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc3NTMzMTYsImV4cCI6MjA5MzMyOTMxNn0.2I4a1dKaUVau8yC8-wYVdnuWYTtQKV-ChIVTsQth-J4"
